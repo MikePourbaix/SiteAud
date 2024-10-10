@@ -1,0 +1,93 @@
+<section>
+    <h1>Coaching Sportif</h1>
+
+    <div class="nav-links2">
+        <a class="nav-link" href="#rdvCoach">- Prendre rendez-vous en Coaching -</a>
+    </div>
+
+    <div class="container6">
+        <h1>Domaines de compétences et description </h1>
+
+        <p>
+            <span class="text">
+                Remise en forme, reprise du sport et travail du périnée en <b>post-partum</b>
+            </span>
+            <img src="/images/post-partum.jpg">
+        </p>
+
+        <p>
+            <img src="/images/coaching pendant grossesse.jpg">
+            <span class="text">
+                Entretien de le forme physique pendant la <b>grossesse</b><br>
+            </span>
+        </p>
+
+        <p>
+            <span class="text">
+                Remise en forme et renforcement musculaire <b>général</b><br>
+            </span>
+            <img src="/images/remise en forme générale.jpg">
+        </p>
+
+        <p>
+            <img src="/images/post-suivi.jpg">
+            <span class="text">
+                Reprise du sport <b>post-suivi en kinésithérapie</b> (chirurgie orthopédique, chirurgie cardiaque,
+                blessures, entorses, ...).<br>
+            </span>
+        </p>
+
+        <p>
+            <span class="text">
+                Suivi sportif et reprise du sport chez les personnes atteintes de <b>diabète</b> (type 1 ou 2). <br>
+            </span>
+            <img src="/images/diabete.jpg">
+        </p>
+    </div>
+
+
+    <div class="container" id="rdvCoach">
+        <div class="reservation-section">
+            <h1>Réservation Coaching</h1>
+
+            {{#if error}}
+            <div class="error-message">{{error}}</div>
+            {{/if}}
+
+            <form id="reservationForm" action="/coachings" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom et Prénom :</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" value="{{name}}"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Numéro de téléphone :</label>
+                    <input type="text" id="tel" name="tel" placeholder="Entrez votre numéro de téléphone"
+                        value="{{tel}}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-body">Détails de votre réservation :</label>
+                    <textarea id="additional-body" name="body"
+                        placeholder="Raison de votre réservation et date souhaitée" required>{{body}}</textarea>
+                </div>
+
+                <button type="submit">Envoyer l'email</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container2" id="contacts">
+
+        <h1>Me contacter</h1>
+
+        <p>
+            <a href="https://www.instagram.com/authefit/"><img src="/images/instagram.png" alt="" class="reseaux"></a>
+            <a href="mailto:audreykinecoach@gmail.com"><img src="/images/mail.png" alt="" class="reseaux"></a>
+            <img src="/images/phone.png" alt="" class="reseaux">: +32 470 52 51 60
+        </p>
+
+    </div>
+
+</section>

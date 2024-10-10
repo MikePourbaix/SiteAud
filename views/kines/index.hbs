@@ -1,0 +1,149 @@
+<section>
+
+  <h1>Kinésithérapie</h1>
+  <div class="nav-links2">
+    <a class="nav-link" href="#rdvKine">- Prendre rendez-vous en Kinésithérapie -</a>
+  </div>
+
+  <div class="container6">
+    <h1>Domaines de compétences et description </h1>
+
+    <p>
+      <span class="text">
+        <b>Kinésithérapie pré- et postnatale </b>
+      </span>
+      <img src="/images/coaching postnatal + kiné pré-postnatal.jpg">
+    </p>
+
+    <p>
+      <img src="/images/kiné musculosquelettique.jpg">
+      <span class="text">
+        <b>Kinésithérapie musculo-squelettique :</b><br> lombalgie, cervicalgie, fracture, entorse, arthrose,
+        tendinopathie,
+        déchirure, tensions musculaires, épaule gelée, ...
+      </span>
+    </p>
+
+    <p>
+      <span class="text">
+        <b>Revalidation après chirurgie orthopédique :</b><br> méniscectomie, arthroscopie, prothèse, ...
+      </span>
+      <img src="/images/kiné orthopédique.jpg">
+    </p>
+
+    <p>
+      <img src="/images/coaching post-suivi kiné + kiné sportive.jpg">
+      <span class="text">
+        <b>Kinésithérapie sportive :</b><br> blessure du sportif, reprise du sport et réathlétisation.
+      </span>
+    </p>
+
+    <p>
+      <span class="text">
+        <b>Kinésithérapie respiratoire pédiatrique :</b><br> bronchiolite du nourrisson, ...
+      </span>
+      <img src="/images/kiné respi pédiatrique.jpg">
+    </p>
+  </div>
+
+  <div class="container5">
+
+    <h2>La kinésithérapie pré et post-natale : </h2>
+
+    <p>Mes séances de kinésithérapie pré et post-natales se déroulent dans une ambiance sereine et détendue avec une
+      attention particulière
+      à la bienveillance, l’écoute et au soutien de chaque femme qui se présente au cabinet.</p> <br> <br>
+
+    <div class="text-columns">
+
+      <p>
+        - <b>Kinésithérapie prénatale :</b> Les séances de kinésithérapie peuvent être débutées pendant la grossesse.
+        Durant ces séances je vous donnerai
+        des explications et répondrai à vos éventuels questionnements concernant l’accouchement. Afin de soulager vos
+        douleurs, je pourrai réaliser
+        des mobilisations douces et vous proposer des assouplissements pour avoir une détente musculaire optimale. Nous
+        serons également amenés à
+        un travail de la posture qui est souvent à l’origine des douleurs pendant la grossesse. Nous verrons aussi les
+        différentes positions que vous pourrez
+        adopter le jour de l’accouchement pour que celui-ci se passe de manière sereine. Une prise de conscience du
+        périnée est aussi très importante pour avoir
+        une poussée efficace lors de l’accouchement et vous aidera dans votre rééducation périnéale en
+        post-accouchement.
+        Si vous désirez continuer une activité physique pendant votre grossesse, je propose des séances de sport dans le
+        respect de votre état de forme évidemment.
+        À votre demande, des séances de yoga et de méditation peuvent également être mises en place. <br><br>
+      </p>
+      <p>
+        - <b>Kinésithérapie postnatale pour maman :</b> L’accouchement est un moment traumatisant pour le corps d’une
+        femme. Environ 6 semaines après celui-ci,
+        vous pourrez débuter les séances de kinésithérapie. Lors de ces séances, je vous aiderai à (re)prendre
+        conscience
+        de votre périnée en vous donnant
+        des exercices progressifs. Je pourrai également vous conseiller sur l’allaitement maternel, le lien
+        d’attachement
+        et vous proposer une séance dédiée
+        aux différents types de portages du bébé.
+        Si vous souhaitez reprendre une activité physique, je propose également des séances de sport en fonction de vos
+        objectifs (remise en forme,
+        perte de poids, réathlétisation, ...). <br><br>
+      <p>
+        - <b>Kinésithérapie postnatale pour bébé :</b> les massages pour bébé comportent des bienfaits tels que :
+        <br><br>
+        • Diminution du stress <br>
+        • Effet positif sur le sommeil<br>
+        • Aide à la digestion<br>
+        • Stimule la circulation sanguine<br>
+        • Développe le lien d’attachement parent-bébé<br><br>
+        Je propose des séances de massage bébé et vous donne les clés pour que vous puissiez les refaire chez vous.
+
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div class="container" id="rdvKine">
+    <div class="reservation-section">
+      <h2>Demande de rendez-vous Kinésithérapie</h2>
+
+      {{#if error}}
+      <div class="error-message">{{error}}</div>
+      {{/if}}
+
+      <form id="reservationForm" action="/kines" method="POST">
+        <div class="form-group">
+          <label for="name">Nom et Prénom :</label>
+          <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" value="{{name}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Numéro de téléphone :</label>
+          <input type="text" id="tel" name="tel" placeholder="Entrez votre numéro de téléphone" value="{{tel}}"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="additional-body">Details de votre réservation :</label>
+          <textarea id="additional-body" name="body" placeholder="Raison de votre réservation et date souhaitée"
+            required>{{body}}</textarea>
+        </div>
+
+        <button type="submit">Envoyer l'email</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container2" id="contacts">
+
+    <h1>Me contacter</h1>
+
+    <p>
+      <a href="https://www.instagram.com/authefit/"><img src="/images/instagram.png" alt="" class="reseaux"></a>
+      <a href="mailto:audreykinecoach@gmail.com"><img src="/images/mail.png" alt="" class="reseaux"></a>
+      <img src="/images/phone.png" alt="" class="reseaux">: +32 470 52 51 60
+    </p>
+
+  </div>
+
+</section>
