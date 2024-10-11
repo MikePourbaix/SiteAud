@@ -67,5 +67,5 @@ jobs:
         with:
           app-name: 'SiteAud'
           slot-name: 'Production'
-          package: .
+          package: release.zip
           
