@@ -21,7 +21,7 @@ router.post('/', function (req, res) {
   const bodyMessage = encodeURIComponent(`KINESITHERAPIE \n _____________________________ \n \n ${tel}\n\n${body}\n \n`);
   const mailtoLink = `mailto:audreykinecoach@gmail.com?subject=${subject}&body=${bodyMessage}`;
 
-  res.redirect(mailtoLink);
+  return res.redirect(mailtoLink);
 });
 
 
