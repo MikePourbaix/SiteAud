@@ -5,7 +5,7 @@ router.get('/', function (req, res) {
   res.render('coachings/index.hbs');
 });
 
-router.post('/', function (req, res, next) {
+router.post('/', function (req, res) {
   const { name, body, tel } = req.body; 
 
   if (!name || name.trim().split(' ').length < 2) {
