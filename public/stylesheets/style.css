@@ -356,6 +356,26 @@ p {
 }
 
 
+
+/* Ciblage spécifique pour les appareils mobiles */
+@media (max-width: 768px) {
+  .cards-container .flip-card {
+    cursor: pointer;
+  }
+
+  .cards-container .flip-card:focus {
+    outline: none; /* Supprime le contour par défaut au focus */
+    transform: rotateY(180deg); /* Applique la rotation au focus */
+  }
+
+  /* Désactive le comportement hover sur mobile */
+  .cards-container .flip-card:hover {
+    transform: none;
+  }
+}
+
+
+
 .container5 {
   max-width: 100%;
   margin: 0 auto;
@@ -419,7 +439,19 @@ p {
 
 @media (max-width: 1200px) {
   .text-overlay {
-    top: 50%;
+    top: 20%; /* Ajuste la position pour les écrans moyens */
+    width: 180px; /* Réduit légèrement la taille pour s'adapter */
+    height: 180px;
+    left: 30%;
+  }
+}
+
+/* Pour les écrans petits (mobiles) */
+@media (max-width: 768px) {
+  .text-overlay {
+    top: 60%; /* Positionne le cercle un peu plus bas sur mobile */
+    width: 160px; /* Réduit davantage la taille sur mobile */
+    height: 160px;
   }
 }
 
