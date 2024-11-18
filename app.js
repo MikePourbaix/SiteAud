@@ -6,8 +6,8 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const appInsights = require("applicationinsights");
-appInsights.setup("0d76c128-6b71-469d-a661-0c9ff56f83b4").start();
+// const appInsights = require("applicationinsights");
+// appInsights.setup("0d76c128-6b71-469d-a661-0c9ff56f83b4").start();
 
 
 hbs.registerHelper('exists', function (variable, options) {

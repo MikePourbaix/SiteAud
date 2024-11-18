@@ -29,17 +29,13 @@ header {
   padding: 20px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   min-height: 150px;
-}
-
-
-header {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-footer{
+footer {
   background-color: #fceed6ea;
 }
 
@@ -75,6 +71,20 @@ footer{
 }
 
 .nav-link:hover {
+  color: #8b7d70;
+  border-bottom: 2px solid #8b7d70;
+}
+
+.nav-link3 {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link3:hover {
   color: #8b7d70;
   border-bottom: 2px solid #8b7d70;
 }
@@ -123,7 +133,7 @@ h3 {
   text-align: center;
 }
 
-a{
+a {
   font-family: 'Arleta', sans-serif;
   font-size: 170%;
 }
@@ -275,7 +285,7 @@ p {
 
 .container4 h2 {
   color: #333;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .cards-container {
@@ -286,7 +296,7 @@ p {
 }
 
 .cards-container .flip-container {
-  perspective: 1000px; 
+  perspective: 1000px;
   display: inline-block;
 }
 
@@ -300,11 +310,12 @@ p {
 }
 
 .cards-container .flip-card:hover {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
   transition-delay: 0.1s;
 }
 
-.cards-container .flip-card-front, .cards-container .flip-card-back {
+.cards-container .flip-card-front,
+.cards-container .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -319,14 +330,14 @@ p {
 }
 
 .cards-container .flip-card-front {
-  background-color: #fdf4e3; 
+  background-color: #fdf4e3;
   color: #333;
 }
 
 .cards-container .flip-card-back {
-  background-color: #ffe0b3;   
+  background-color: #ffe0b3;
   color: #333;
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 .cards-container .flip-card-front p,
@@ -365,8 +376,10 @@ p {
   }
 
   .cards-container .flip-card:focus {
-    outline: none; /* Supprime le contour par défaut au focus */
-    transform: rotateY(180deg); /* Applique la rotation au focus */
+    outline: none;
+    /* Supprime le contour par défaut au focus */
+    transform: rotateY(180deg);
+    /* Applique la rotation au focus */
   }
 
   /* Désactive le comportement hover sur mobile */
@@ -400,19 +413,19 @@ p {
 
 .container5 .text-columns {
   display: grid;
-  grid-template-columns: 4fr 3fr 3fr; 
-  gap: 20px; 
-  max-width: 1300px; 
-  margin: 0 auto; 
-  align-items: stretch; 
+  grid-template-columns: 4fr 3fr 3fr;
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: stretch;
 }
 
 .container5 .text-columns p {
-  background-color: #ffffff; 
-  justify-content: center; 
-  align-items: center; 
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  height: 100%; 
+  height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
@@ -440,8 +453,10 @@ p {
 
 @media (max-width: 1200px) {
   .text-overlay {
-    top: 20%; /* Ajuste la position pour les écrans moyens */
-    width: 180px; /* Réduit légèrement la taille pour s'adapter */
+    top: 20%;
+    /* Ajuste la position pour les écrans moyens */
+    width: 180px;
+    /* Réduit légèrement la taille pour s'adapter */
     height: 180px;
     left: 30%;
   }
@@ -450,8 +465,10 @@ p {
 /* Pour les écrans petits (mobiles) */
 @media (max-width: 768px) {
   .text-overlay {
-    top: 60%; /* Positionne le cercle un peu plus bas sur mobile */
-    width: 160px; /* Réduit davantage la taille sur mobile */
+    top: 60%;
+    /* Positionne le cercle un peu plus bas sur mobile */
+    width: 160px;
+    /* Réduit davantage la taille sur mobile */
     height: 160px;
   }
 }
@@ -486,12 +503,20 @@ p {
   background-color: #f7f2ec;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .reservation-section h1 {
   font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
+}
+
+.reservation-section img {
+  max-width: 150px;
+  margin-right: 20px;
 }
 
 .form-group {
